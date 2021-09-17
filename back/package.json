@@ -1,0 +1,19 @@
+{
+  "name": "zero-nj",
+  "version": "1.0.0",
+  "description": "",
+  "exports": "./rest/app.js",
+  "scripts": {
+    "start": "node --experimental-modules rest/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "~4.16.1",
+    "esm": "^3.2.25",
+    "simple-json-db": "^1.2.3"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
