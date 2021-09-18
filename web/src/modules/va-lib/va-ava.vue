@@ -1,9 +1,28 @@
 <template>
   <div class="va-ava">
-    <img ref="imgref" :src="url" alt="avatar" v-show="false">
-    <div class="va-ava-box" :style="{width: avaSize + 'px', height: avaSize + 'px'}" @click="openLoad">
-      <img :src="url" :alt="file?.type" :width="width" :height="height">
-      <input id="file-input" type="file" v-show="false" @change="load">
+    <img
+      ref="imgref"
+      :src="url"
+      alt="avatar"
+      v-show="false"
+    >
+    <div
+      class="va-ava-box"
+      :style="{width: avaSize + 'px', height: avaSize + 'px'}"
+      @click="openLoad"
+    >
+      <img
+        :src="url"
+        :alt="file?.type"
+        :width="width"
+        :height="height"
+      >
+      <input
+        id="file-input"
+        type="file"
+        v-show="false"
+        @change="load"
+      >
     </div>
   </div>
 </template>
@@ -68,19 +87,19 @@ export default {
         }).bind(this));
       }
     }
-  },
-  mounted() {
-    console.log('mounted av');
   }
 }
 </script>
 
 <style scoped>
-.va-ava-box {
-  background-color: beige;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-}
+  .va-ava {
+    box-shadow: 0 0 1px 1px blue;
+  }
+  .va-ava-box {
+    background-color: beige;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
 
 </style>

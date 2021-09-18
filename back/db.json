@@ -106,7 +106,9 @@
                 "user14",
                 "user15"
             ],
-            "lists": []
+            "lists": [
+                "list103"
+            ]
         },
         "user14": {
             "subscribers": 3,
@@ -115,7 +117,10 @@
                 "user13",
                 "user15"
             ],
-            "lists": []
+            "lists": [
+                "list104",
+                "list105"
+            ]
         },
         "user15": {
             "subscribers": 4,
@@ -166,6 +171,35 @@
             "wishes": [
                 "wish1003"
             ]
+        },
+        "list103": {
+            "ord": 1,
+            "title": "All that I want",
+            "access": "public",
+            "wishes": [
+                "wish1004",
+                "wish1005",
+                "wish1006"
+            ]
+        },
+        "list104": {
+            "ord": 1,
+            "title": "A little bit of me",
+            "access": "public",
+            "wishes": [
+                "wish1007",
+                "wish1008"
+            ]
+        },
+        "list105": {
+            "ord": 1,
+            "title": "Hidden passions",
+            "access": "public",
+            "wishes": [
+                "wish1009",
+                "wish1010",
+                "wish1011"
+            ]
         }
     },
     "wishes": {
@@ -190,6 +224,54 @@
         "wish1003": {
             "ord": 1,
             "title": "iPhone 13",
+            "description": "",
+            "whoChecked": null
+        },
+        "wish1004": {
+            "ord": 1,
+            "title": "Gletcher",
+            "description": "",
+            "whoChecked": null
+        },
+        "wish1005": {
+            "ord": 1,
+            "title": "Coconut butter",
+            "description": "",
+            "whoChecked": null
+        },
+        "wish1006": {
+            "ord": 1,
+            "title": "French press",
+            "description": "",
+            "whoChecked": null
+        },
+        "wish1007": {
+            "ord": 1,
+            "title": "1 kg chicken wings",
+            "description": "",
+            "whoChecked": null
+        },
+        "wish1008": {
+            "ord": 1,
+            "title": "Kick scooter",
+            "description": "",
+            "whoChecked": null
+        },
+        "wish1009": {
+            "ord": 1,
+            "title": "Volley Ball",
+            "description": "",
+            "whoChecked": null
+        },
+        "wish1010": {
+            "ord": 1,
+            "title": "Cherry Cola",
+            "description": "",
+            "whoChecked": null
+        },
+        "wish1011": {
+            "ord": 1,
+            "title": "Tripple cheeseburger",
             "description": "",
             "whoChecked": null
         }

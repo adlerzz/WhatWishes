@@ -1,9 +1,9 @@
 <template>
   <div @click="startEditing">
-
+    <label v-if="label">{{label}}</label>
     <span v-show="!editing && modelValue">
-      <span class="icon">&#9998;</span>
       <span>{{modelValue}}</span>
+      <div class="icon">&#9998;</div>
     </span>
     <span
         class="placeholder"
@@ -25,6 +25,7 @@ export default {
   name: "va-editable-text",
   props: {
     modelValue: String,
+    label: String,
     placeholder: String
   },
   emits: ['update:modelValue'],
@@ -57,11 +58,14 @@ export default {
     opacity: 0.3;
   }
 
-  span.icon {
+  .icon {
+    display: inline-block;
+    cursor: pointer;
+    transform: scaleX(-1);
     opacity: 0.1;
   }
 
-  span.icon:hover {
+  .icon:hover {
     opacity: 0.8;
   }
 </style>

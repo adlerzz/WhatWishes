@@ -1,10 +1,10 @@
 {
-  "name": "zero-nj",
+  "name": "back",
   "version": "1.0.0",
   "description": "",
   "exports": "./rest/app.js",
   "scripts": {
-    "start": "node --experimental-modules rest/app.js",
+    "backend:dev:start": "node --experimental-modules rest/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

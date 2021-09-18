@@ -39,6 +39,22 @@ app.get( '/users/:userId/full',
     }
 );
 
+app.get( '/users/:userId/lists',
+    (request, response) => {
+        const userId = request.params['userId'];
+        const links = {...DB.get('links')[userId]};
+        const lists = links.lists
+            .map( listId => ({id: listId, ...DB.get('lists')[listId]}))
+            .filter(list => list.access === 'public');
+
+        lists.forEach( list => {
+            list.wishes = list.wishes.map( wishId => ({id: wishId, ...DB.get('wishes')[wishId]}));
+        });
+
+        response.status(200).json(lists);
+    }
+);
+
 app.post( '/users',
     (request, response) => {
 

@@ -2,13 +2,13 @@
   <div class="main">
     <va-tab :defaultTabIndex="0">
       <va-tab-item title="Profile">
-        <profile-tab :profile="profile"></profile-tab>
+        <profile-tab :profile="profile"/>
       </va-tab-item>
       <va-tab-item title="Lists">
-        <lists-tab :lists="lists"></lists-tab>
+        <lists-tab :lists="lists"/>
       </va-tab-item>
       <va-tab-item title="Subscriptions">
-        <subscriptions-tab :subs="subs"></subscriptions-tab>
+        <subscriptions-tab :subs="subs"/>
       </va-tab-item>
     </va-tab>
   </div>
@@ -50,6 +50,7 @@ export default {
 <style scoped>
    .main {
      width: 600px;
+     background-color: white;
    }
 
 

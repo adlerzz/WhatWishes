@@ -1,7 +1,11 @@
 <template>
   <va-accordion>
-    <va-accordion-item v-for="list in lists" :key="list.id" :title="`${list.title}, ${list.access}`">
-      <va-editable-list :items="list.wishes"></va-editable-list>
+    <va-accordion-item
+        v-for="list in lists"
+        :key="list.id"
+        :title="`${list.title}, ${list.access}`"
+    >
+      <va-editable-list :items="list.wishes"/>
     </va-accordion-item>
   </va-accordion>
 </template>
