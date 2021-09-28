@@ -12,6 +12,7 @@
       </va-tab-item>
     </va-tab>
   </div>
+  <button @click="logout">Log out</button>
 </template>
 
 <script>
@@ -21,6 +22,7 @@ import ListsTab from "@/components/lists-tab";
 import SubscriptionsTab from "@/components/subscriptions-tab";
 import VaTab from "@/modules/va-lib/va-tab";
 import VaTabItem from "@/modules/va-lib/va-tab-item";
+import {loggedAs} from "@/services/login.service";
 export default {
   name: "draft",
   components: {
@@ -37,8 +39,18 @@ export default {
       subs: [ ]
     }
   },
+  methods: {
+    logout(){
+      this.$emit('emit', {event: 'logout'});
+    }
+  },
+  emits: [
+      'emit'
+  ],
   mounted(){
-    axios.get('http://localhost:3400/users/user15/full').then(response => {
+    console.log('mounted draft');
+    const userId = loggedAs();
+    axios.get(`http://localhost:3400/users/${userId}/full`).then(response => {
       this.profile = response.data;
       this.lists = response.data.links.lists;
       this.subs = response.data.links.subscriptions;

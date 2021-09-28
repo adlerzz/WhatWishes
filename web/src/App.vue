@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <draft/>
+    <router/>
   </div>
 </template>
 
 <script>
-import Draft from "@/components/draft";
+
+import Router from "@/components/router";
 
 export default {
   name: 'App',
   components: {
-    Draft
+    Router,
   }
 }
 </script>
