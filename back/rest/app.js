@@ -148,4 +148,4 @@ app.listen(3400);
 
 console.log("App started");
 console.log(`pid: ${pid}`);
-fs.writeFile('PID', pid, err => {console.log(err)});
+fs.writeFile('PID', String(pid), err => {console.log(err)});
