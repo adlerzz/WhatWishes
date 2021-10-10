@@ -1,6 +1,7 @@
 import express from 'express';
 import jsdb from 'simple-json-db';
 import {pid} from 'process';
+import {fs} from 'fs';
 import {mapObject} from "./utils.js";
 
 const app = express();
@@ -147,3 +148,4 @@ app.listen(3400);
 
 console.log("App started");
 console.log(`pid: ${pid}`);
+fs.writeFile('PID', pid, err => {console.log(err)});
