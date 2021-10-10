@@ -1,7 +1,7 @@
 import express from 'express';
 import jsdb from 'simple-json-db';
 import {pid} from 'process';
-import {fs} from 'fs';
+import fs from 'fs';
 import {mapObject} from "./utils.js";
 
 const app = express();
