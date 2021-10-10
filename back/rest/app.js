@@ -1,5 +1,6 @@
 import express from 'express';
 import jsdb from 'simple-json-db';
+import {pid} from 'process';
 import {mapObject} from "./utils.js";
 
 const app = express();
@@ -145,3 +146,4 @@ app.post( '/ctrl/reloadDB',
 app.listen(3400);
 
 console.log("App started");
+console.log(`pid: ${pid}`);
